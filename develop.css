@@ -1,0 +1,190 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+header {
+    background: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+    position: relative;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+}
+
+nav ul li a:hover, nav ul li:hover > a {
+    background: #007BFF;
+    border-radius: 5px;
+}
+
+nav ul .dropdown {
+    display: none;
+    position: absolute;
+    background: #333;
+    top: 100%;
+    left: 0;
+    min-width: 150px;
+}
+
+nav ul .dropdown li {
+    display: block;
+    margin: 0;
+}
+
+nav ul li:hover .dropdown {
+    display: block;
+}
+
+.hero {
+    background: url('office-620822_1920.jpg') no-repeat center center/cover;
+    color: rgb(149, 39, 39);
+    opacity: 1;
+    text-align: center;
+    padding: 150px 0 100px;
+    margin-top: 50px;}
+
+.hero h1 {
+    margin: 0;
+    font-size: 3em;
+}
+
+.hero p {
+    margin: 20px 0;
+    font-size: 1.2em;
+}
+
+.hero button {
+    padding: 10px 20px;
+    font-size: 1em;
+    background: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.hero button:hover {
+    background: #0056b3;
+}
+
+#about.content{
+    background: url("people-1979261_1920.jpg");
+    height: px;
+    
+}
+
+.content {
+    padding: 100px 20px;
+    text-align: center;
+    
+
+.services-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.service-box {
+    background: #f4f4f4;
+    padding: 20px;
+    margin: 10px;
+    width: 30%;
+    box-sizing: border-box;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+    
+}
+
+.service-box:hover {
+    transform: scale(1.05);
+}
+
+.service-box h3 {
+    margin-top: 0;
+}
+
+#contact.content{
+   background: url("place.webp");
+   object-fit: cover;
+
+}
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: url("place.webp");
+}
+
+form label {
+    margin-top: 10px;
+}
+
+form input, form textarea {
+    width: 80%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    
+}
+
+form button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 1em;
+    background: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+form button:hover {
+    background: #0056b3;
+}
+
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+@media (max-width: 768px) {
+    .service-box {
+        width: 100%;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 5px 0;
+    }
+
+}
+
+}
